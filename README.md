@@ -12,4 +12,7 @@ Parser and analyzer for https://w3c.github.io/web-performance/specs/HAR/Overview
 
 # run harhar with a http archive for github.com
 dart run harhar examples/github.com.har
+
+# compile => yields binary in build/harhar
+./build.sh
 ```
