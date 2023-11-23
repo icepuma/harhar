@@ -1,10 +1,15 @@
 name: harhar
 version: 2023.10.20
 description: |
-  Parser and analyzer for https://w3c.github.io/web-performance/specs/HAR/Overview.html files
+  Parser and analyzer for https://w3c.github.io/web-performance/specs/HAR/Overview.html files.
+  harhar stands for *h*ttp *ar*chive *h*elpful *a*nalyze*r*
 
 environment:
   sdk: ^3.1.0
 
+dev_dependencies:
+  build_runner: ^2.4.6
+  json_serializable: ^6.7.1
+
 dependencies:
-  args: ^2.4.2
+  json_annotation: ^4.8.1

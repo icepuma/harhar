@@ -1,10 +1,15 @@
-import 'package:args/args.dart';
+import 'dart:convert';
+import 'dart:io';
+
+import 'package:harhar/model/har.dart';
 
 void main(List<String> arguments) {
-  final parser = ArgParser()..addFlag('verbose', negatable: false, abbr: 'v');
+  final file = new File(arguments[0]);
 
-  ArgResults argResults = parser.parse(arguments);
+  file.readAsString().then((value) {
+    final json = jsonDecode(value);
+    final har = Har.fromJson(json);
 
-  print(argResults.toString());
-  print(arguments.toString());
+    print(har.toJson());
+  }, onError: (e) => print(e));
 }
