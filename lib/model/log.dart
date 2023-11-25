@@ -3,12 +3,14 @@ import "package:json_annotation/json_annotation.dart";
 import 'creator.dart';
 import 'browser.dart';
 import 'entry.dart';
+import 'page.dart';
 
 part 'log.g.dart';
 
 @JsonSerializable(explicitToJson: true)
 class Log {
-  Log(this.version, this.creator, this.browser, this.entries, this.comment);
+  Log(this.version, this.creator, this.browser, this.pages, this.entries,
+      this.comment);
 
   final String version;
   final Creator creator;
@@ -16,7 +18,8 @@ class Log {
   @JsonKey(includeIfNull: false)
   final Browser? browser;
 
-  // pages?
+  @JsonKey(includeIfNull: false)
+  final List<Page>? pages;
 
   @JsonKey(includeIfNull: false)
   final List<Entry> entries;

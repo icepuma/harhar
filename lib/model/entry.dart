@@ -2,13 +2,24 @@ import 'package:json_annotation/json_annotation.dart';
 
 import 'request.dart';
 import 'response.dart';
+import 'cache.dart';
+import 'timings.dart';
 
 part 'entry.g.dart';
 
 @JsonSerializable(explicitToJson: true)
 class Entry {
-  Entry(this.pageref, this.startedDateTime, this.time, this.request,
-      this.response, this.serverIpAddress, this.connection, this.comment);
+  Entry(
+      this.pageref,
+      this.startedDateTime,
+      this.time,
+      this.request,
+      this.response,
+      this.cache,
+      this.timings,
+      this.serverIpAddress,
+      this.connection,
+      this.comment);
 
   @JsonKey(includeIfNull: false)
   final String? pageref;
@@ -17,9 +28,8 @@ class Entry {
   final num time;
   final Request request;
   final Response response;
-
-  // cache
-  // timings
+  final Cache cache;
+  final Timings timings;
 
   @JsonKey(includeIfNull: false)
   final String? serverIpAddress;
