@@ -23,7 +23,6 @@ dart run harhar examples/github.com.har
 
 ## Todos
 
-- [ ] Argument parsing
 - [ ] Multiple output options (beautiful, JSON)
 - [ ] More analyzer tasks (e.g. top 10 slowest requests)
 - [ ] GitHub releases
