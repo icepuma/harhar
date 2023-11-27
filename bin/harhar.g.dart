@@ -8,7 +8,7 @@ part of 'harhar.dart';
 
 const _$pubspec = (
   name: "harhar",
-  version: "2023.11.26",
+  version: "2023.11.28",
   description:
       "Parser and analyzer for https://w3c.github.io/web-performance/specs/HAR/Overview.html files",
   environment: (sdk: "^3.1.0"),
