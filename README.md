@@ -24,5 +24,4 @@ dart run harhar examples/github.com.har
 ## Todos
 
 - [ ] Multiple output options (beautiful, JSON)
-- [ ] More analyzer tasks (e.g. top 10 slowest requests)
 - [ ] GitHub releases

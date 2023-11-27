@@ -21,6 +21,7 @@ const _$pubspec = (
   dependencies: (
     args: "^2.4.2",
     dartConsole: "^1.2.0",
+    duration: "^3.0.13",
     embedAnnotation: "^1.2.0",
     jsonAnnotation: "^4.8.1"
   )
