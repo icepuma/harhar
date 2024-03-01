@@ -205,10 +205,10 @@ packages:
     dependency: "direct main"
     description:
       name: embed_annotation
-      sha256: "648c3dbc8f26c2feb3b893666a322d1ae9ac455366196fbc3cf203ce00982dbb"
+      sha256: "0c7e68cc2f98d279a85a9d22f15242a06a1ec67b3be7ab69380ecd961e9b8e9b"
       url: "https://pub.dev"
     source: hosted
-    version: "1.2.0"
+    version: "1.2.1"
   ffi:
     dependency: transitive
     description:
